@@ -11,4 +11,7 @@ app.use(function (req, res, next) {
 
 require('./routes')(app)
 
-app.listen(3000, () => console.log('Woo Listening on port 3000'))
+app.listen(3000, function () {
+  console.log('Woo Listening on port 3000')
+})
+
